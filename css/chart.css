@@ -1,21 +1,115 @@
-
-
-table{
+table {
     border-collapse: collapse;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 70%;
     margin: 0 auto;
     margin-top: 50px;
 }
 
-td{
-    border: 1px solid black;
+
+.title-product {
+    display: flex;
+    flex-direction: column;
+
 }
 
-.title{
-        font-family: 'SF Pro Text';
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-        text-align: left;
+.title-product div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.title-product div button {
+    border: none;
+    font-size: 2em;
+    background-color: transparent;
+    border: 1px solid rgba(169, 167, 167, 0);
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+.title-product div button:hover {
+    border: 1px solid rgb(169, 167, 167);
+}
+
+#count {
+    width: 30px;
+}
+
+
+.title {
+    font-family: 'SF Pro Text';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+
+.delete div {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.totalPrice {
+    margin-top: 20px;
+}
+
+tfoot div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Оформитьзаказ {
+    background-color: #4295E4;
+    color: white;
+    padding: 9px 64px;
+    border: none;
+    cursor: pointer;
+}
+
+.Продолжитьпокупки {
+    background-color: white;
+    color: black;
+    padding: 9px 64px;
+    border: none;
+    border: 1px solid #ADD7FF;
+    cursor: pointer;
+}
+
+thead div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+tr{
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 10px;
+}
+
+.closeTable{
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.closeTable:hover{
+    border: 1px solid #EAEAEA;
 }

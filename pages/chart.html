@@ -52,37 +52,28 @@
     <div class="main">
         <div class="container">
             <table>
-                <tr>
-                    <td>
-                        <img src="" alt="" width="300" height="300">
+                <thead>
+                    <td colspan="3">
+                       <div>
+                        <h1>Корзина</h1>
+                        <button class="closeTable">X</button>
+                       </div>
                     </td>
-                    <td>
-                        <h2 class="title">Name</h2>
-                        <p>+ Подарок: <a href="#">“Приложение к замкам Golden Service”</a></p>
-                        <div>
-                            <button class="minus">-</button>
-                            <input type="text" name="count" id="count">
-                            <button class="plus">+</button>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="../imgs/trash.svg" alt="trash.svg">
-                            <span>Удалить</span>
-                        </div>
-                        <p class="price">3300$</p>
-                    </td>
-                </tr>
+                </thead>
+                <tbody>
 
+                </tbody>
                 <tfoot>
                     <tr>
                         <td colspan="3">
-                            <p>Итого: <span>66 000₽</span></p>
+                            <p class="totalCost">Итого: <span>66 000₽</span></p>
                         </td>
                         <tr>
                             <td colspan="3">
-                                <button class="Оформитьзаказ">Оформить заказ</button>
-                                <button  class="Продолжитьпокупки">Продолжить покупки</button>
+                                <div>
+                                    <button class="Оформитьзаказ">Оформить заказ</button>
+                                    <button class="Продолжитьпокупки">Продолжить покупки</button>
+                                </div>
                             </td>
                         </tr>
                     </tr>
@@ -91,5 +82,7 @@
         </div>
     </div>
     
+
+    <script src="../js/chart.js" type="module"></script>
 </body>
 </html>

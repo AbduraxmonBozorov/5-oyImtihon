@@ -95,7 +95,6 @@ function getProducts() {
     if (localStorage.getItem("products")) {
         products = JSON.parse(localStorage.getItem("products"));
     }
-
     return products;
 };
 
@@ -106,6 +105,34 @@ function showToast() {
 }
 
 
+function createTr(obj) {
+    return `
+        <tr data-id="${obj.id}">
+            <td>
+                <img src="${obj.image}" alt="" width="136" height="120">
+            </td>
+            <td class="title-product">
+                <h2 class="title">${obj.name}</h2>
+                <p>+ Подарок: <a href="#">“Приложение к замкам Golden Service”</a></p>
+                <div>
+                    <button class="minus">-</button>
+                    <input type="text" name="count" id="count" value="${obj.count}">
+                    <button class="plus">+</button>
+                </div>
+            </td>
+            <td class="delete">
+                <div>
+                    <img src="../imgs/trash.svg" alt="trash.svg">
+                    <span>Удалить</span>
+                </div>
+                <p class="price">${obj.newPrice}$</p>
+            </td>
+        </tr>
+    `;
+}
 
 
-export { getData, createCard, removeCard, selectProduct, createDetailes, getProducts, showToast };
+
+
+
+export { getData, createCard, removeCard, selectProduct, createDetailes, getProducts, showToast, createTr    };

@@ -1,8 +1,10 @@
-import { getData, createCard, removeCard, selectProduct } from "./functions.js";
+import { getData, createCard, removeCard, selectProduct, getProducts } from "./functions.js";
 
 const loaderDiv = document.querySelector(".loaderDiv");
 const cards = document.querySelector(".contentCards .cards");
 const category = document.querySelector("#category");
+const chartCount=document.querySelector(".chartCount");
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -15,6 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 let card = createCard(data[i]);
                 cards.innerHTML += card
             }
+
+            let products=getProducts();
+            chartCount.style.cssText="width: 25px; height: 25px;"
+            chartCount.innerHTML=products.length;
+
+
+            
 
             category.addEventListener("change", (e) => {
                 let categoryValue = e.target.value;

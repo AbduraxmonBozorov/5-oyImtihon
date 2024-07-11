@@ -2,10 +2,10 @@ import { getData, createDetailes, getProducts, showToast } from "./functions.js"
 
 const loaderDiv = document.querySelector(".loaderDiv");
 const aboutProduct = document.querySelector(".aboutProduct");
-const chartCount=document.querySelector(".chartCount");
+const chartCount = document.querySelector(".chartCount");
 
-const chartLink=document.querySelector(".chartLink");
-chartLink.addEventListener("click", ()=>{
+const chartLink = document.querySelector(".chartLink");
+chartLink.addEventListener("click", () => {
     window.location.assign(`http://127.0.0.1:5500/pages/chart.html`);
 })
 
@@ -18,6 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
             loaderDiv.style.display = "none";
         }
 
+        {
+            let products = getProducts();
+            chartCount.style.cssText = "width: 25px; height: 25px;"
+            chartCount.innerHTML = products.length;
+
+        }
+
+
         let detailes = createDetailes(data);
         aboutProduct.innerHTML = detailes;
 
@@ -26,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         button && button.addEventListener('click', () => {
             console.log(data.name);
             let products = getProducts();
-            const chartLink=document.querySelector(".chartLink");
+            const chartLink = document.querySelector(".chartLink");
 
             const isExist = products.find(product => product.name === data.name);
 
@@ -39,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             localStorage.setItem("products", JSON.stringify(products));
             showToast();
-            chartCount.style.cssText="width: 25px; height: 25px;"
-            chartCount.innerHTML=products.length;
+            chartCount.style.cssText = "width: 25px; height: 25px;"
+            chartCount.innerHTML = products.length;
         });
 
 
