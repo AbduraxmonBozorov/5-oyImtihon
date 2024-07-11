@@ -6,7 +6,7 @@ const chartCount = document.querySelector(".chartCount");
 
 const chartLink = document.querySelector(".chartLink");
 chartLink.addEventListener("click", () => {
-    window.location.assign(`http://127.0.0.1:5500/pages/chart.html`);
+    window.location.assign(`https://5-oy-imtihon-five.vercel.app/pages/chart.html`);
 })
 
 document.addEventListener("DOMContentLoaded", () => {

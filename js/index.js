@@ -22,9 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             chartCount.style.cssText="width: 25px; height: 25px;"
             chartCount.innerHTML=products.length;
 
-
             
-
             category.addEventListener("change", (e) => {
                 let categoryValue = e.target.value;
                 console.log(categoryValue);

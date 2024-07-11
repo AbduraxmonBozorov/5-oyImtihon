@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let minus=document.querySelector(".minus");
     let plus=document.querySelector('plus');
 
-    minus.addEventListener("click", ()=>{
+    minus && minus.addEventListener("click", ()=>{
         let count=document.querySelector(".count")
         count*=1
         count++;
-        
+
     })
 
 

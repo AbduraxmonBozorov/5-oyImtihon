@@ -924,7 +924,7 @@ body {
 
 .toast.show {
     visibility: visible;
-    animation: fadeInOut 3s ease-in-out;
+    animation: fadeInOut 1s ease-in-out;
 }
 
 @-webkit-keyframes fadeInOut {

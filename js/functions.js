@@ -61,7 +61,7 @@ function selectProduct() {
     card.length > 0 && card.forEach(item => {
         item.addEventListener("click", (event) => {
             let id = item.getAttribute("data-id");
-            window.location.assign(`http://127.0.0.1:5500/pages/detailes.html?id=${id}`);
+            window.location.assign(`https://5-oy-imtihon-five.vercel.app/pages/detailes.html?id=${id}`);
         })
     })
 };
