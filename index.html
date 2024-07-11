@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="header__one">
+            <div class="container">
+                <p>Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09</p>
+                <a href="#">Обратный звонок</a>
+            </div>
+        </section>
+        <section class="header__two">
+            <div class="container">
+                <img src="./imgs/logo.svg" alt="logo.svg" class="logo">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                        <li class="nav-item"><select class="nav-link" name="catalog" id="catalog">
+                                <option value="">Каталог</option>
+                            </select></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Оптовая продажа</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+
+                    </ul>
+                </nav>
+
+                <a href="#" class="phone">
+                    <img src="./imgs/phone.svg" alt="phone.svg">
+                    <span>+7 (966) 55 88 499</span>
+                </a>
+
+                <div class="icons">
+                    <a href="#">
+                        <img class="heart" src="./imgs/heart.svg" alt="heart.svg">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/chart.svg" alt="chart.svg" class="chart">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="tabs">
+                <a href="#">Главная / <span>Каталог</span></a>
+            </div>
+            <div class="counter">
+                <h1>Накладные электронные замки</h1>
+                <span>(854)</span>
+            </div>
+
+            <div class="content">
+                <form action="" class="form">
+                    <button type="button">Сбросить фильтры</button>
+                    <div class="mainFilter">
+                        <h3>Фильтр</h3>
+                        <div class="priceFilter Цена">
+                            <p>
+                                <span>Цена</span>
+                                <img src="./imgs/arrowUp.svg" alt="arrowUp.svg">
+                            </p>
+                            <div class="inputs">
+                                <input type="text" name="beginPrice" id="beginPrice">
+                                <input type="text" name="maxPrice" id="maxPrice">
+                            </div>
+                        </div>
+
+                        <div class="priceFilter Особенности">
+                            <p>
+                                <span>Особенности</span>
+                                <img src="./imgs/arrowDown.svg" alt="arrowUp.svg">
+                            </p>
+                            <div class="inputs">
+                                <input type="text" name="Особенности" id="Особенности">
+                            </div>
+                        </div>
+
+                        <div class="priceFilter Цвет">
+                            <p>
+                                <span>Цвет</span>
+                                <img src="./imgs/arrowDown.svg" alt="arrowUp.svg">
+                            </p>
+                            <div class="inputs">
+                                <input type="text" name="Особенности" id="Особенности">
+                            </div>
+                        </div>
+
+                        <div class="priceFilter Материал">
+                            <p>
+                                <span>Материал</span>
+                                <img src="./imgs/arrowDown.svg" alt="arrowUp.svg">
+                            </p>
+                            <div class="inputs">
+                                <input type="text" name="Особенности" id="Особенности">
+                            </div>
+                        </div>
+
+                        <div class="priceFilter Размеры">
+                            <p>
+                                <span>Размеры</span>
+                                <img src="./imgs/arrowDown.svg" alt="arrowUp.svg">
+                            </p>
+                            <div class="inputs">
+                                <input type="text" name="Особенности" id="Особенности">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="contentCards">
+                    <div class="contentFilter">
+                        <a href="#">
+                            <span>Электронные кодовые замки</span>
+                            <img src="./imgs/close.svg" alt="close.svg">
+                        </a>
+
+                        <select class="categoryFilter" name="category" id="category">
+                            <option value="популярен">популярен</option>
+                            <option value="известный">известный</option>
+                            <option value="средний">средний</option>
+                            <option value="не популярен">не популярен</option>
+                        </select>
+                    </div>
+
+                    <div class="cards" style="min-height: 500px;">
+                        <div class="loaderDiv">
+                        <div class="lds-spinner">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <img class="previous" src="./imgs/arrowDown.svg" alt="">
+                        <ul>
+                            <li class="page-item active">1</li>
+                            <li class="page-item">2</li>
+                            <li class="page-item">3</li>
+                            <li class="page-item">4</li>
+                            <li class="page-item">5</li>
+                        </ul>
+                        <img class="next" src="./imgs/arrowDown.svg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-header">
+                    <h2>Вы недавно просмотрели</h2>
+                    <div class="carousel-indicator">
+                        <img src="./imgs/arrowDown.svg" class="carousel-prev" alt="">
+                        <img src="./imgs/arrowDown.svg" class="carousel-next" alt="">
+                    </div>
+                </div>
+
+                <div class="carouselMain">
+                    <div class="carousel-inner">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://picsum.photos/id/831/200/300" alt="">
+                                <div class="netNalichi">
+                                    <img src="./imgs/close.svg" alt="">
+                                    <span>Нет в наличии</span>
+                                </div>
+                                <div class="podarok">
+                                    <img src="./imgs/podarok.svg" alt="podarok.svg">
+                                    <span>Подарок</span>
+                                </div>
+                                <div class="sale">sale</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="starsAndComments">
+                                    <div class="stars">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/star.svg" alt="star.svg" class="starDisable">
+                                        <img src="./imgs/star.svg" alt="star.svg" class="starDisable">
+                                    </div>
+                                    <div class="comments">
+                                        <p>(<span class="commentsCount">12</span>) <span
+                                                class="commentsText">отзывов</span></p>
+                                    </div>
+                                </div>
+                                <p class="aboutProduct">
+                                    Вариативный замок Golden Soft для отеля
+                                </p>
+                                <div class="porductPrice">
+                                    <strong class="newPrice">7 000₽</strong> <del class="oldPrice">8 000₽</del>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://picsum.photos/id/831/200/300" alt="">
+                                <div class="netNalichi">
+                                    <img src="./imgs/close.svg" alt="">
+                                    <span>Нет в наличии</span>
+                                </div>
+                                <div class="podarok">
+                                    <img src="./imgs/podarok.svg" alt="podarok.svg">
+                                    <span>Подарок</span>
+                                </div>
+                                <div class="sale">sale</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="starsAndComments">
+                                    <div class="stars">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/star.svg" alt="star.svg" class="starDisable">
+                                        <img src="./imgs/star.svg" alt="star.svg" class="starDisable">
+                                    </div>
+                                    <div class="comments">
+                                        <p>(<span class="commentsCount">12</span>) <span
+                                                class="commentsText">отзывов</span></p>
+                                    </div>
+                                </div>
+                                <p class="aboutProduct">
+                                    Вариативный замок Golden Soft для отеля
+                                </p>
+                                <div class="porductPrice">
+                                    <strong class="newPrice">7 000₽</strong> <del class="oldPrice">8 000₽</del>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://picsum.photos/id/831/200/300" alt="">
+                                <div class="netNalichi">
+                                    <img src="./imgs/close.svg" alt="">
+                                    <span>Нет в наличии</span>
+                                </div>
+                                <div class="podarok">
+                                    <img src="./imgs/podarok.svg" alt="podarok.svg">
+                                    <span>Подарок</span>
+                                </div>
+                                <div class="sale">sale</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="starsAndComments">
+                                    <div class="stars">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/star.svg" alt="star.svg" class="starDisable">
+                                        <img src="./imgs/star.svg" alt="star.svg" class="starDisable">
+                                    </div>
+                                    <div class="comments">
+                                        <p>(<span class="commentsCount">12</span>) <span
+                                                class="commentsText">отзывов</span></p>
+                                    </div>
+                                </div>
+                                <p class="aboutProduct">
+                                    Вариативный замок Golden Soft для отеля
+                                </p>
+                                <div class="porductPrice">
+                                    <strong class="newPrice">7 000₽</strong> <del class="oldPrice">8 000₽</del>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://picsum.photos/id/831/200/300" alt="">
+                                <div class="netNalichi">
+                                    <img src="./imgs/close.svg" alt="">
+                                    <span>Нет в наличии</span>
+                                </div>
+                                <div class="podarok">
+                                    <img src="./imgs/podarok.svg" alt="podarok.svg">
+                                    <span>Подарок</span>
+                                </div>
+                                <div class="sale">sale</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="starsAndComments">
+                                    <div class="stars">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/startActive.svg" alt="startActive.svg" class="activeStar">
+                                        <img src="./imgs/star.svg" alt="star.svg" class="starDisable">
+                                        <img src="./imgs/star.svg" alt="star.svg" class="starDisable">
+                                    </div>
+                                    <div class="comments">
+                                        <p>(<span class="commentsCount">12</span>) <span
+                                                class="commentsText">отзывов</span></p>
+                                    </div>
+                                </div>
+                                <p class="aboutProduct">
+                                    Вариативный замок Golden Soft для отеля
+                                </p>
+                                <div class="porductPrice">
+                                    <strong class="newPrice">7 000₽</strong> <del class="oldPrice">8 000₽</del>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aboutProductDiv">
+                <div class="block1">
+                    <div class="block1-text">
+                        <h2>Eget quis quam metus, scelerisque.</h2>
+                        <p class="block1-text-p1">Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor
+                            molestie massa porttitor. Quisque at turpis ut
+                            proin eu et magna etiam rhoncus.</p>
+                        <section>
+                            <article>
+                                <img src="./imgs/check.svg" alt="">
+                                <p>Межкомнатую дверь</p>
+                            </article>
+                            <article>
+                                <img src="./imgs/check.svg" alt="">
+                                <p>Деревянную дверь</p>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <img src="./imgs/check.svg" alt="">
+                                <p>Межкомнатую дверь</p>
+                            </article>
+                            <article>
+                                <img src="./imgs/check.svg" alt="">
+                                <p>Деревянную дверь</p>
+                            </article>
+                        </section>
+                        <p class="block1-text-p1">Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra
+                            interdum in leo. Nullam ullamcorper id enim fermentum
+                            integer praesent bibendum. In ullamcorper purus scelerisque malesuada et egestas. Ac
+                            dictumst mauris sed facilisis.</p>
+                    </div>
+                    <div class="block1-img">
+                        <img src="https://picsum.photos/id/831/200/300" alt="">
+                    </div>
+                </div>
+                <div class="block1 block2">
+                    <div class="block1-img">
+                        <img src="https://picsum.photos/id/831/200/300" alt="">
+                    </div>
+                    <div class="block1-text">
+                        <h2>Eget quis quam metus, scelerisque.</h2>
+                        <p class="block1-text-p1">Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor
+                            molestie massa
+                            porttitor. Quisque at turpis ut
+                            proin eu et magna etiam rhoncus.</p>
+                        <section>
+                            <article>
+                                <img src="./imgs/check.svg" alt="">
+                                <p>Межкомнатую дверь</p>
+                            </article>
+                            <article>
+                                <img src="./imgs/check.svg" alt="">
+                                <p>Деревянную дверь</p>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <img src="./imgs/check.svg" alt="">
+                                <p>Межкомнатую дверь</p>
+                            </article>
+                            <article>
+                                <img src="./imgs/check.svg" alt="">
+                                <p>Деревянную дверь</p>
+                            </article>
+                        </section>
+                        <p class="block1-text-p1">Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra
+                            interdum in leo.
+                            Nullam ullamcorper id enim fermentum
+                            integer praesent bibendum. In ullamcorper purus scelerisque malesuada et egestas. Ac
+                            dictumst mauris sed
+                            facilisis.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="перезвоним">
+            <div class="container">
+                <h2>Мы Вам перезвоним</h2>
+                <p>Если у вас возникли какие-то вопросы или проблемы, заполните форму и мы Вам перезвоним.</p>
+                <form action="" class="contact-us">
+                    <input type="text" name="name" id="name" placeholder="Ваше имя">
+                    <input type="email" name="email" id="email" placeholder="Ваш Email">
+                    <input type="button" class="Отправить" value="Отправить">
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footerLogo">
+                    <img src="./imgs/footerLogo.svg" alt="footerLogo.svg">
+                    <div class="social">
+                        <img src="./imgs/vk.svg" alt="vk.svg" class="vk">
+                        <img src="./imgs/twitter.svg" alt="twitter.svg" class="twitter">
+                        <img src="./imgs/footerFaccebook.svg" alt="footerFaccebook.svg" class="facebook">
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <section>
+                        <h3>Навигация</h3>
+                        <a href="#">Главная</a>
+                        <a href="#">Каталог</a>
+                        <a href="#">Оптовая продажа</a>
+                        <a href="#">О нас</a>
+                    </section>
+                    <section>
+                        <h3>Наши контакты</h3>
+                        <a href="#" class="foooter__tel">Телефоны</a>
+                        <a href="#">+7 (988) 565 00 38</a>
+                        <a href="#">+375 33 662 82 56</a>
+                        <a href="#" class="footer__email">Email</a>
+                        <a href="#">vladpertcev@mail.ru</a>
+                        <a href="#">korobko416@gmail.com</a>
+                    </section>
+                    <section>
+                        <h3>Наш адрес</h3>
+                        <p>Россия, Ростов-на-Дону ул. Богачева, 16</p>
+                    </section>
+                    <section>
+                        <h3>информация</h3>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Гарантии</a>
+                        <a href="#">Возврат товара</a>
+                    </section>
+                </div>
+            </div>
+            
+            <div class="footer__copy">
+                <p>© 2021 Golden Soft All rights reserved.</p>
+            </div>
+        </div>
+        
+
+    </footer>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
