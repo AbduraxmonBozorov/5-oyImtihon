@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (removeProduct) {
                 let deleteId = item.parentElement.getAttribute("data-id")
                 item.parentElement.remove();
-                console.log(deleteId);
                 products = products.filter(item => {
                     return item.id != deleteId
                 })
