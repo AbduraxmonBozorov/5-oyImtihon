@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-
         let detailes = createDetailes(data);
         aboutProduct.innerHTML = detailes;
 
