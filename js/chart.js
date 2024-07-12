@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 products = products.filter(item => {
                     return item.id != deleteId
                 })
-                localStorage.setItem("products", products);
+                localStorage.setItem("products", JSON.stringify(products));
             }
 
             totalCost1();
