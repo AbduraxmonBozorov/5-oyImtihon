@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     let minus=document.querySelectorAll(".minus");
-    let plus=document.querySelectorAll('plus');
+    let plus=document.querySelectorAll('.plus');
 
     minus && minus.forEach(item=>{
         item.addEventListener("click", ()=>{
