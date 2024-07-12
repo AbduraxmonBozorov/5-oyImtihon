@@ -55,15 +55,22 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
-    let minus=document.querySelector(".minus");
-    let plus=document.querySelector('plus');
+    let minus=document.querySelectorAll(".minus");
+    let plus=document.querySelectorAll('plus');
 
-    minus && minus.addEventListener("click", ()=>{
-        let count=document.querySelector(".count")
-        count*=1
-        count++;
-
+    minus && minus.forEach(item=>{
+        item.addEventListener("click", ()=>{
+            alert("Bu oynada soni o'zgartira olmaysiz!");
+        })
     })
+
+    plus && plus.forEach(item=>{
+        item.addEventListener("click", ()=>{
+            alert("Bu oynada soni o'zgartira olmaysiz!");
+        })
+    })
+
+
 
 
 })
